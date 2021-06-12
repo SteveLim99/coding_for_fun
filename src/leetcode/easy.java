@@ -45,4 +45,16 @@ public class easy {
 
         return res;
     }
+
+    /*
+        Title: Delete Node in a Linked List
+        Solution: Change value of current node to value of next node and change reference to next node to node after next node
+        Time Complexity: O(1)
+        Space Complexity: O(1)
+        Link: https://leetcode.com/problems/delete-node-in-a-linked-list/
+     */
+    private static void idx_237(ListNode node){
+        node.val = node.next.val;
+        node.next = node.next.next;
+    }
 }
