@@ -4,6 +4,13 @@ import utils.ListNode;
 
 public class easy {
 
+    /*
+        Title: Remove Duplicates from Sorted Array
+        Solution: Alter head of array with non-duplicates
+        Time Complexity: O(n)
+        Space Complexity: O(1)
+        Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+     */
     private static int idx_26(int[] nums) {
         int idx = 1;
         for (int i = 1; i < nums.length; i++){
