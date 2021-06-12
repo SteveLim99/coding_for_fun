@@ -12,3 +12,5 @@ This directory contains the code for questions found on leetcode which are seper
 ```
 idx_<Index_Number_On_Leetcode>{_<Implementation_Version>}?
 ```
+### Utils - /src/utils
+This directory contains implementation of various data structures that are utilized throughout some of the questions found in src/leetcode or src/ctci. 
