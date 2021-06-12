@@ -2,6 +2,9 @@ package leetcode;
 
 import utils.ListNode;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class easy {
 
     /*
@@ -56,5 +59,29 @@ public class easy {
     private static void idx_237(ListNode node){
         node.val = node.next.val;
         node.next = node.next.next;
+    }
+
+    /*
+        Title: Two Sum
+        Solution: Sliding window with varying window sizes to find the two indices which adds up to target
+        Time Complexity: O(log n)
+        Space Complexity: O(1)
+        Link: https://leetcode.com/problems/two-sum/
+     */
+    private static int[] idx_1_0(int[] nums, int target){
+        int window_size = 1, res = -1;
+
+        while(window_size != nums.length){
+            for(int i = window_size; i < nums.length; i++){
+                if(nums[i] + nums[i - window_size] == target) {
+                    res = i;
+                    break;
+                }
+            }
+            if(res != -1) break;
+            window_size++;
+        }
+
+        return new int[]{res - window_size, res};
     }
 }
