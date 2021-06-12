@@ -4,14 +4,11 @@ import java.util.HashMap;
 
 public class chp_1 {
 
-    public static void main(String[] args){
-//        boolean res = is_unique_1_dot_1("tes");
-//        System.out.println(res);
-
-        boolean res = check_permutation_1_dot_2("test", "tats");
-        System.out.println(res);
-    }
-
+    /*
+        Boolean array to store occurence of all alphabets
+        Time Complexity: O(n)
+        Space Complexity: O(1)
+     */
     private static boolean is_unique_1_dot_1(String input){
         boolean[] all_characters = new boolean[28];
 
@@ -26,6 +23,11 @@ public class chp_1 {
         return true;
     }
 
+    /*
+        HashMap to compare occurences of characters found within both strings
+        Time Complexity: O(n)
+        Space Complexity: O(n)
+     */
     private static boolean check_permutation_1_dot_2(String a, String b){
         if (a.length() != b.length()) return false;
         HashMap<Character, Integer> map = new HashMap<>();
