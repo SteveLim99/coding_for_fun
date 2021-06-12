@@ -84,4 +84,31 @@ public class easy {
 
         return new int[]{res - window_size, res};
     }
+
+    /*
+        Title: Two Sum
+        Solution: Using a hash map to store elements in the list and their corresponding indices, then using hash map to check for presence
+                  of a complement. This gives drawbacks to both performance and space complexity.
+        Time Complexity: O(n)
+        Space Complexity: O(n)
+        Link: https://leetcode.com/problems/two-sum/
+     */
+    private static int[] idx_1_1(int[] nums, int target){
+        Map<Integer, Integer> map = new HashMap();
+        int[] res = new int[2];
+
+        for(int i = 0; i < nums.length; i++){
+            int curr = nums[i];
+            int complement = target - curr;
+
+            if(map.containsKey(complement)){
+                res[0] = map.get(complement);
+                res[1] = i;
+                break;
+            }
+            map.put(curr, i);
+        }
+
+        return res;
+    }
 }
