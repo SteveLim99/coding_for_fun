@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22471216-3508-441e-bc8f-572e668f612d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/medium.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/medium.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -59,8 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/leetcode/medium.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="41" column="56" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="56" />
+            <state relative-caret-position="599">
+              <caret line="68" column="71" selection-start-line="68" selection-start-column="71" selection-end-line="68" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -147,7 +148,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1623857002113" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1623859483801" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -227,12 +228,12 @@
       <workItem from="1623479604046" duration="1126000" />
       <workItem from="1623480905300" duration="472000" />
       <workItem from="1623591362616" duration="2268000" />
-      <workItem from="1623854909424" duration="1697000" />
+      <workItem from="1623854909424" duration="2954000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13699000" />
+    <option name="totallyTimeSpent" value="14956000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-8" width="1296" height="1066" extended-state="0" />
@@ -341,8 +342,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/leetcode/medium.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="41" column="56" selection-start-line="41" selection-start-column="55" selection-end-line="41" selection-end-column="56" />
+        <state relative-caret-position="599">
+          <caret line="68" column="71" selection-start-line="68" selection-start-column="71" selection-end-line="68" selection-end-column="71" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -63,4 +63,40 @@ public class medium {
         }
         return res;
     }
+
+    /*
+        Title: Balance a Binary Search Tree
+        Solution: Given a binary search tree, return a balanced binary search tree with the same node values.
+                  A binary search tree is balanced if and only if the depth of the two subtrees of every node never differ by more than 1.
+                  If there is more than one answer, return any of them.
+        Time Complexity: O(n)
+        Space Complexity: O(n)
+        Link: https://leetcode.com/problems/balance-a-binary-search-tree/
+     */
+    public class idx_1382_0 {
+        public TreeNode balanceBST(TreeNode root) {
+            List<TreeNode> sto = new ArrayList();
+            dfs(root, sto);
+            return bsearch(sto, 0, sto.size()-1);
+        }
+
+        private void dfs(TreeNode root, List<TreeNode> sto){
+            if(root == null) return;
+
+            if(root.left != null) dfs(root.left, sto);
+            sto.add(root);
+            if(root.right != null) dfs(root.right, sto);
+        }
+
+        private TreeNode bsearch(List<TreeNode> sto, int start, int end) {
+            if (start > end) return null;
+
+            int mid = start + (end - start) / 2;
+            TreeNode root = sto.get(mid);
+
+            root.left = bsearch(sto, start, mid - 1);
+            root.right = bsearch(sto, mid + 1, end);
+            return root;
+        }
+    }
 }
