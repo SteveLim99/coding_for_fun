@@ -99,4 +99,40 @@ public class medium {
             return root;
         }
     }
+
+    /*
+        Title: Number of Islands
+        Solution: Given an m x n 2D binary grid grid which represents a map of '1's (land) and '0's (water), return the number of islands.
+        An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically.
+        You may assume all four edges of the grid are all surrounded by water.
+        Time Complexity: O(n^2)
+        Space Complexity: O(1)
+        Link: https://leetcode.com/problems/number-of-islands/
+     */
+    public class idx_200_0 {
+        public int numIslands(char[][] grid) {
+            int islands = 0;
+
+            for(int y = 0; y < grid.length; y++){
+                for(int x = 0; x < grid[0].length; x++){
+                    if(grid[y][x] == '1'){
+                        dfs(grid, x, y);
+                        islands++;
+                    }
+                }
+            }
+
+            return islands;
+        }
+
+        private void dfs(char[][] grid, int x, int y){
+            if(y < 0 || y >= grid.length || x < 0 || x >= grid[0].length || grid[y][x] == '0') return;
+
+            grid[y][x] = '0';
+            dfs(grid, x + 1, y);
+            dfs(grid, x - 1, y);
+            dfs(grid, x, y + 1);
+            dfs(grid, x, y - 1);
+        }
+    }
 }
