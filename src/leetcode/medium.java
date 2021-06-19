@@ -11,7 +11,7 @@ import java.util.Queue;
 public class medium {
     /*
         Title: Deepest Leaves Sum
-        Solution:   Given the root of a binary tree, return the sum of values of its deepest leaves.
+        Description:    Given the root of a binary tree, return the sum of values of its deepest leaves.
         Time Complexity: O(n)
         Space Complexity: O(n)
         Link: https://leetcode.com/problems/deepest-leaves-sum/
@@ -40,8 +40,8 @@ public class medium {
 
     /*
         Title: Binary Tree Right Side View
-        Solution:   Given the root of a binary tree, imagine yourself standing on the right side of it,
-                    return the values of the nodes you can see ordered from top to bottom.
+        Description:    Given the root of a binary tree, imagine yourself standing on the right side of it,
+                        return the values of the nodes you can see ordered from top to bottom.
         Time Complexity: O(n)
         Space Complexity: O(n)
         Link: https://leetcode.com/problems/binary-tree-right-side-view/
@@ -67,9 +67,9 @@ public class medium {
 
     /*
         Title: Balance a Binary Search Tree
-        Solution:   Given a binary search tree, return a balanced binary search tree with the same node values.
-                    A binary search tree is balanced if and only if the depth of the two subtrees of every node never differ by more than 1.
-                    If there is more than one answer, return any of them.
+        Description:    Given a binary search tree, return a balanced binary search tree with the same node values.
+                        A binary search tree is balanced if and only if the depth of the two subtrees of every node never differ by more than 1.
+                        If there is more than one answer, return any of them.
         Time Complexity: O(n)
         Space Complexity: O(n)
         Link: https://leetcode.com/problems/balance-a-binary-search-tree/
@@ -103,9 +103,9 @@ public class medium {
 
     /*
         Title: Number of Islands
-        Solution:   Given an m x n 2D binary grid grid which represents a map of '1's (land) and '0's (water), return the number of islands.
-                    An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically.
-                    You may assume all four edges of the grid are all surrounded by water.
+        Description:    Given an m x n 2D binary grid grid which represents a map of '1's (land) and '0's (water), return the number of islands.
+                        An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically.
+                        You may assume all four edges of the grid are all surrounded by water.
         Time Complexity: O(n^2)
         Space Complexity: O(1)
         Link: https://leetcode.com/problems/number-of-islands/
@@ -139,8 +139,8 @@ public class medium {
 
     /*
         Title: Reverse Linked List II
-        Solution:   Given the head of a singly linked list and two integers left and right where left <= right,
-                    reverse the nodes of the list from position left to position right, and return the reversed list.
+        Description:    Given the head of a singly linked list and two integers left and right where left <= right,
+                        reverse the nodes of the list from position left to position right, and return the reversed list.
         Time Complexity: O(n)
         Space Complexity: O(1)
         Link: https://leetcode.com/problems/reverse-linked-list-ii/
